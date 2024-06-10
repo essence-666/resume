@@ -22,8 +22,8 @@ html, body, #page {
 }
 
 .mob {
-    height: 10%;
-    width: 30%;
+    height: 200px;
+    width: 250px;
     padding: 5%;
     float: left;
     /* border: 0.00002px solid black; /* Adjust the width, style, and color as needed */
