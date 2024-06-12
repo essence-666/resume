@@ -2,15 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function showMainMenu() {
         const newElement = document.createElement('div');
         newElement.innerHTML = `
-            <div class="main-div"> 
-                <img src="mob.avif" alt="" class="mob">
-                <p class="links">
-                    Hi! I am a first year undergraduate student at Innopolis University <br>
-                    <a href="https://github.com/essence-666"><img class="icons" src="git.svg" alt=""></a> 
-                    <a href="https://leetcode.com/u/essence-/"><img class="icons" src="leetcode.png" alt=""></a>
-                    <a href="https://t.me/againlose"><img class="icons" src="Telegram_logo.svg.webp" alt=""></a> 
-                </p>
-            </div>
+        <div class = "main-div"> 
+            
+            <img src="mob.avif" alt="" class="mob">
+            <p class="links">
+            <h7>Hi! I am  a first year undergraduate student at Innopolis University </h7> <br>
+                <a style = "margin-left: 53%" href="https://github.com/essence-666"><img class ="icons" src="git.svg" alt=""></a> 
+                <a href="https://leetcode.com/u/essence-/"><img class ="icons" src="leetcode.png" alt=""></a>
+                <a href="https://t.me/againlose"><img class ="icons" src="Telegram_logo.svg.webp" alt=""></a> 
+                <a href="mailto:6ejlo3epobnt@gmail.com"><img class ="icons" src="281769.png" alt=""></a> 
+            </p>
+        </div>  
             <button id="about" class="button-27" role="button">About me</button>
             <button id="projects" class="button-27" role="button">Projects</button>
         `;
