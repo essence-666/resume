@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <img src="mob.avif" alt="" class="mob">
             <p class="links">
-            <h7>Hi! I am  a first year undergraduate student at Innopolis University </h7> <br>
+            Hi! I am  a first year undergraduate student at Innopolis University <br>
                 <a style = "margin-left: 53%" href="https://github.com/essence-666"><img class ="icons" src="git.svg" alt=""></a> 
                 <a href="https://leetcode.com/u/essence-/"><img class ="icons" src="leetcode.png" alt=""></a>
                 <a href="https://t.me/againlose"><img class ="icons" src="Telegram_logo.svg.webp" alt=""></a> 
