@@ -75,3 +75,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
     attachEventListeners();
 });
+
+async function fetchAPI() {
+  const params = "https://fwd.innopolis.university/api/hw2?email=e.belozerov@innopolis.university";
+  const response = await fetch(params);
+    try {
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+async function fetchCOMIC(id) {
+  params = `https://fwd.innopolis.university/api/comic?id=${id}`;
+  const responce = await fetch(params);
+  try {
+    const data = await responce.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function displayComic() {
+  const data = await fetchCOMIC(await fetchAPI());
+  const imageURL = data.img;
+  const alternativeText = data.alt;
+
+  if (imageURL) {
+    const img = document.createElement('img');
+    img.src = imageURL;
+    img.alt = alternativeText;
+
+    const container = document.getElementById('image-container');
+    container.appendChild(img);
+  } else {
+    console.error("no url");
+  }
+  
+}
+
+displayComic();
+
+
