@@ -1,0 +1,15 @@
+[23387:23387:0620/172507.344863:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+[23454:23454:0620/172522.293849:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[23454:23454:0620/172527.068080:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[23454:23454:0620/172543.530126:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[23514:1:0620/172645.786055:ERROR:native_extension_bindings_system.cc(613)] Failed to create API on Chrome object.
+[23514:10:0620/172645.787528:ERROR:native_extension_bindings_system.cc(613)] Failed to create API on Chrome object.
+[23514:1:0620/172645.787787:ERROR:native_extension_bindings_system.cc(613)] Failed to create API on Chrome object.
+[23514:10:0620/172645.788978:ERROR:native_extension_bindings_system.cc(613)] Failed to create API on Chrome object.
+[23514:10:0620/172645.790324:ERROR:native_extension_bindings_system.cc(613)] Failed to create API on Chrome object.
+Warning: DeviceDescriptor.deviceLostCallback and DeviceDescriptor.deviceLostUserdata are deprecated. Use DeviceDescriptor.deviceLostCallbackInfo instead.
+Warning: DeviceDescriptor.deviceLostCallback and DeviceDescriptor.deviceLostUserdata are deprecated. Use DeviceDescriptor.deviceLostCallbackInfo instead.
+Warning: Old MapAsync APIs are deprecated. If using C please pass a CallbackInfo struct that has two userdatas. Otherwise, if using C++, please use templated helpers.
+[23387:23387:0620/173020.178082:ERROR:atom_cache.cc(229)] Add chromium/x-source-url to kAtomsToCache

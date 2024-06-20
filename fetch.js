@@ -1,6 +1,7 @@
 async function fetchAPI() {
-  const params = "https://fwd.innopolis.university/api/hw2?email=e.belozerov@innopolis.university";
-  const response = await fetch(params);
+  const url = 'https://fwd.innopolis.university/api/hw2';
+  const params = new URLSearchParams({ email: 'e.belozerov@innopolis.university' });
+  const response = await fetch(`${url}?${params.toString()}`);
   try {
     const data = await response.json();
     return data;
@@ -10,10 +11,11 @@ async function fetchAPI() {
 }
 
 async function fetchCOMIC(id) {
-  params = `https://fwd.innopolis.university/api/comic?id=${id}`;
-  const responce = await fetch(params);
+  const url = 'https://fwd.innopolis.university/api/comic';
+  const params = new URLSearchParams({ id: id });
+  const response = await fetch(`${url}?${params.toString()}`);
   try {
-    const data = await responce.json();
+    const data = await response.json();
     return data;
   } catch (error) {
     console.log(error);
