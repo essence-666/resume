@@ -1,41 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>cv</title>
 
-<head>
-  <title>cv</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-  <video id="background-video" autoplay loop muted>
-    <source src="Bite_Rain_R.mp4" type="video/mp4">
-  </video>
-  <div id="core">
-    <div class="main-div">
-
-      <img src="mob.avif" alt="" class="mob">
-      <p class="links">
-        Hi! I am a first year undergraduate student at Innopolis University <br>
-        <a style="margin-left: 30%" href="https://github.com/essence-666"><img class="icons" src="git.svg" alt=""></a>
-        <a href="https://leetcode.com/u/essence-/"><img class="icons" src="leetcode.png" alt=""></a>
-        <a href="https://t.me/againlose"><img class="icons" src="Telegram_logo.svg.webp" alt=""></a>
-        <a href="mailto:6ejlo3epobnt@gmail.com"><img class="icons" src="281769.png" alt=""></a>
-      </p>
+  <body>
+    <video id="background-video" autoplay loop muted>
+      <source src="images/Bite_Rain_R.mp4" type="video/mp4" />
+    </video>
+    <div id="core">
+      <div class="main-div">
+        <img src="images/mob.avif" alt="" class="mob" />
+        <p class="links">
+          Hi! I am a first year undergraduate student at Innopolis University
+          <br />
+          <a style="margin-left: 30%" href="https://github.com/essence-666"
+            ><img class="icons" src="images/git.svg" alt=""
+          /></a>
+          <a href="https://leetcode.com/u/essence-/"
+            ><img class="icons" src="images/leetcode.png" alt=""
+          /></a>
+          <a href="https://t.me/againlose"
+            ><img class="icons" src="images/Telegram_logo.svg.webp" alt=""
+          /></a>
+          <a href="mailto:6ejlo3epobnt@gmail.com"
+            ><img class="icons" src="images/281769.png" alt=""
+          /></a>
+        </p>
+      </div>
+      <button id="about" class="button-27">About me</button>
+      <script src="about.js"></script>
+      <button id="projects" class="button-27">Projects</button>
+      <button class="button-27" onclick="window.location.href='comic.html';">
+        Comic
+      </button>
     </div>
-    <button id="about" class="button-27">About me</button>
-    <script src="about.js"></script>
-    <button id="projects" class="button-27">Projects</button>
-    <button class="button-27" onclick ="window.location.href='comic.html';">Comic</button>
-    
-  </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,24 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     function showMainMenu() {
-        const newElement = document.createElement('div');
+        const newElement = document.createElement("div");
         newElement.innerHTML = `
         <div class = "main-div"> 
             
-            <img src="mob.avif" alt="" class="mob">
+            <img src="images/mob.avif" alt="" class="mob">
             <p class="links">
             Hi! I am  a first year undergraduate student at Innopolis University <br>
-                <a style = "margin-left: 53%" href="https://github.com/essence-666"><img class ="icons" src="git.svg" alt=""></a> 
-                <a href="https://leetcode.com/u/essence-/"><img class ="icons" src="leetcode.png" alt=""></a>
-                <a href="https://t.me/againlose"><img class ="icons" src="Telegram_logo.svg.webp" alt=""></a> 
-                <a href="mailto:6ejlo3epobnt@gmail.com"><img class ="icons" src="281769.png" alt=""></a> 
+                <a style = "margin-left: 53%" href="https://github.com/essence-666"><img class ="icons" src="images/git.svg" alt=""></a> 
+                <a href="https://leetcode.com/u/essence-/"><img class ="icons" src="images/leetcode.png" alt=""></a>
+                <a href="https://t.me/againlose"><img class ="icons" src="images/Telegram_logo.svg.webp" alt=""></a> 
+                <a href="mailto:6ejlo3epobnt@gmail.com"><img class ="icons" src="images/281769.png" alt=""></a> 
             </p>
         </div>  
             <button id="about" class="button-27" role="button">About me</button>
             <button id="projects" class="button-27" role="button">Projects</button>
+            <button class="button-27" onclick="window.location.href='comic.html';">
+                Comic
+            </button>
+ 
         `;
         newElement.id = "core";
 
-        const elementToReplace = document.getElementById('aboutdiv') || document.getElementById('projectsdiv');
+        const elementToReplace =
+            document.getElementById("aboutdiv") ||
+            document.getElementById("projectsdiv");
 
         elementToReplace.parentNode.replaceChild(newElement, elementToReplace);
 
@@ -26,9 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function attachEventListeners() {
-        document.getElementById('about').addEventListener('click', function showAboutMe() {
-            const newElement = document.createElement('div');
-            newElement.innerHTML = `
+        document
+            .getElementById("about")
+            .addEventListener("click", function showAboutMe() {
+                const newElement = document.createElement("div");
+                newElement.innerHTML = `
             <div class = "main-div">
                 <ul style = "padding: 5%">
                    <li>Belozerov Egor 18 yo</li>
@@ -42,18 +50,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button id="back" class="button-27" role="button">Back</button>
 
             `;
-            newElement.id = "aboutdiv"; 
+                newElement.id = "aboutdiv";
 
-            const elementToReplace = document.getElementById('core');
+                const elementToReplace = document.getElementById("core");
 
-            elementToReplace.parentNode.replaceChild(newElement, elementToReplace);
+                elementToReplace.parentNode.replaceChild(newElement, elementToReplace);
 
-            document.getElementById('back').addEventListener('click', showMainMenu);
-        });
-        
-        document.getElementById('projects').addEventListener('click', function showProjects() {
-            const newElement = document.createElement('div');
-            newElement.innerHTML = `
+                document.getElementById("back").addEventListener("click", showMainMenu);
+            });
+
+        document
+            .getElementById("projects")
+            .addEventListener("click", function showProjects() {
+                const newElement = document.createElement("div");
+                newElement.innerHTML = `
             <div class = "main-div">
                 <ul style = "padding: 5%">
                     <li>c# anonymous telegram bot <a href="https://github.com/essence-666/c-AnonBot">git</a></li>
@@ -63,22 +73,23 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
                 <button id="back" class="button-27" role="button">Back</button>
             `;
-            newElement.id = "projectsdiv"; 
+                newElement.id = "projectsdiv";
 
-            const elementToReplace = document.getElementById('core');
+                const elementToReplace = document.getElementById("core");
 
-            elementToReplace.parentNode.replaceChild(newElement, elementToReplace);
+                elementToReplace.parentNode.replaceChild(newElement, elementToReplace);
 
-            document.getElementById('back').addEventListener('click', showMainMenu);
-        });
+                document.getElementById("back").addEventListener("click", showMainMenu);
+            });
     }
 
     attachEventListeners();
 });
 
 async function fetchAPI() {
-  const params = "https://fwd.innopolis.university/api/hw2?email=e.belozerov@innopolis.university";
-  const response = await fetch(params);
+    const params =
+        "https://fwd.innopolis.university/api/hw2?email=e.belozerov@innopolis.university";
+    const response = await fetch(params);
     try {
         const data = await response.json();
         return data;
@@ -88,34 +99,31 @@ async function fetchAPI() {
 }
 
 async function fetchCOMIC(id) {
-  params = `https://fwd.innopolis.university/api/comic?id=${id}`;
-  const responce = await fetch(params);
-  try {
-    const data = await responce.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
+    params = `https://fwd.innopolis.university/api/comic?id=${id}`;
+    const responce = await fetch(params);
+    try {
+        const data = await responce.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function displayComic() {
-  const data = await fetchCOMIC(await fetchAPI());
-  const imageURL = data.img;
-  const alternativeText = data.alt;
+    const data = await fetchCOMIC(await fetchAPI());
+    const imageURL = data.img;
+    const alternativeText = data.alt;
 
-  if (imageURL) {
-    const img = document.createElement('img');
-    img.src = imageURL;
-    img.alt = alternativeText;
+    if (imageURL) {
+        const img = document.createElement("img");
+        img.src = imageURL;
+        img.alt = alternativeText;
 
-    const container = document.getElementById('image-container');
-    container.appendChild(img);
-  } else {
-    console.error("no url");
-  }
-  
+        const container = document.getElementById("image-container");
+        container.appendChild(img);
+    } else {
+        console.error("no url");
+    }
 }
 
 displayComic();
-
-
