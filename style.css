@@ -1,77 +1,88 @@
-html, body, #page {
-    height:100%;
-    width:100%;
-    margin:0;
-    padding:0;
-    color: white;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 32px;
-    overflow-y: hidden;
-
+html,
+body,
+#page {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 32px;
+  overflow-y: hidden;
 }
 
 .main-div {
-    height: 25%;
-    width: 50%;
-    margin-top: 10%;
-    margin-left: 25%;
-    background-color: rgb(0, 0, 0, 0.9);
-    border-radius: 10px;
+  height: 25%;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 10px;
 }
 
 .mob {
-    height: 200px;
-    width: 250px;
-    padding: 5%;
-    float: left;
-    /* border: 0.00002px solid black; /* Adjust the width, style, and color as needed */
-    border-radius: 50%;
-    /* background-image:  */
-        /* linear-gradient(red, blue),  */
-        /* linear-gradient(to right, green, gold); */ 
+  height: 200px;
+  width: 250px;
+  padding: 5%;
+  float: left;
+  /* border: 0.00002px solid black; /* Adjust the width, style, and color as needed */
+  border-radius: 50%;
+  /* background-image:  */
+  /* linear-gradient(red, blue),  */
+  /* linear-gradient(to right, green, gold); */
 }
 
 .links {
-    margin-left: 15%;
-    padding: 5%;
+  margin-left: 15%;
+  padding: 5%;
 }
 
 #background-video {
-   width: 100vw;
-   height: 100vh;
-   object-fit: cover;
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .icons {
-    padding-top: 10%;
-    width: 5%;
+  padding-top: 10%;
+  width: 5%;
 }
 
 #aboutme {
-    background-color: blue;
-    width: 50%;
-    height: 100%;
-    margin-left: 25%;
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
 }
 
 .button-27 {
   appearance: none;
   background-color: rgb(0, 0, 0, 0.9);
-  border: 2px solid #1A1A1A;
+  border: 2px solid #1a1a1a;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family:
+    Roobert,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -82,12 +93,12 @@ html, body, #page {
   padding: 16px 24px;
   text-align: center;
   text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 50%;
-  margin-left:25%;
+  margin-left: 25%;
   will-change: transform;
 }
 
