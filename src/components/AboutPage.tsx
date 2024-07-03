@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
         </div>
         <button
           className="button-27"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/resume")}
         >
           Back
         </button>
