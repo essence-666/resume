@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2ab8936.css",
+    "main.js": "/static/js/main.da851b87.js",
+    "static/js/453.f19e9853.chunk.js": "/static/js/453.f19e9853.chunk.js",
+    "static/media/Bite_Rain_R.mp4": "/static/media/Bite_Rain_R.487f49e29cabc7e66943.mp4",
+    "static/media/mob.avif": "/static/media/mob.6fcfc2c12df0cba044f9.avif",
+    "static/media/Telegram_logo.svg.webp": "/static/media/Telegram_logo.svg.a81e363cf05c1049cfc4.webp",
+    "static/media/281769.png": "/static/media/281769.d765005ce9d4caa3d69e.png",
+    "static/media/git.svg": "/static/media/git.255db585f8a0eb28a1e4deb91bde207d.svg",
+    "index.html": "/index.html",
+    "main.d2ab8936.css.map": "/static/css/main.d2ab8936.css.map",
+    "main.da851b87.js.map": "/static/js/main.da851b87.js.map",
+    "453.f19e9853.chunk.js.map": "/static/js/453.f19e9853.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2ab8936.css",
+    "static/js/main.da851b87.js"
+  ]
+}
