@@ -63,3 +63,7 @@
   transition: 0s;
   transform: translate(0, 5%);
 }
+
+button {
+  margin: 20px;
+}

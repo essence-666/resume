@@ -9,8 +9,10 @@ const HomePage = () => (
     <div id="core" className={styles.mainDiv}>
       <div className={styles.imageContainer}>
         <Image src={mob} alt="Your Alt Text" className={styles.mob} />
+        <p>
+          Hi! I am a first-year undergraduate student at Innopolis University
+        </p>
       </div>
-      <p>Hi! I am a first-year undergraduate student at Innopolis University</p>
     </div>
   </div>
 );
