@@ -1,5 +1,4 @@
 .mainDiv {
-  height: 45%;
   width: 50%;
   margin-left: 25%;
   margin-top: 10%;
@@ -18,4 +17,10 @@
   /* background-image:  */
   /* linear-gradient(red, blue),  */
   /* linear-gradient(to right, green, gold); */
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  /* Align items vertically centered */
 }

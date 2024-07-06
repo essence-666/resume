@@ -4,7 +4,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className={styles.mainDiv}>
-      <ul className={styles.list}>
+      <ul style={{ padding: "5%", textAlign: "left" }}>
         <li>Belozerov Egor 18 yo</li>
         <li>Innopolis University Student 2023-2027 June</li>
         <li>
