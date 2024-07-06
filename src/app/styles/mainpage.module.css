@@ -1,0 +1,21 @@
+.mainDiv {
+  height: 45%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+}
+
+.mob {
+  height: 200px;
+  width: 250px;
+  padding: 5%;
+  float: left;
+  /* border: 0.00002px solid black; /* Adjust the width, style, and color as needed */
+  border-radius: 50%;
+  /* background-image:  */
+  /* linear-gradient(red, blue),  */
+  /* linear-gradient(to right, green, gold); */
+}

@@ -1,0 +1,9 @@
+.cont {
+  margin-left: 25%;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+  margin-top: 10%;
+  text-align: center;
+  width: 50%;
+}
